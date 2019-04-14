@@ -6,55 +6,86 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <title>Product Landing Page</title>
         <link rel="stylesheet" href="css/main.css" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     </head>
     <body>
-        <header id="header" class=" header-primary">
-            <div class="logo">
-            <img id="header-img" src="Strandberg-logo.png" alt="" />
+        <div class="container">
+            <header id="header" class=" header-primary">
+                <div class="logo">
+                <img id="header-img" src="Strandberg-logo.png" alt="" />
+                </div>
+                
+    
+                <nav id="nav-bar">
+                    <ul>
+                        <li><a href="#features" class="nav-link">Features</a></li>
+                        <li><a href="#video" class="nav-link">Watch</a></li>
+                        <li><a href="#pricing" class="nav-link">Pricing</a></li>
+                    </ul>
+                </nav>
+            </header>
+    
+            <form 
+                id="form"
+                method="POST"
+                action="https://www.freecodecamp.com/email-submit"
+            >
+                <label for="email"></label>
+                <input
+                    id="email"
+                    type="email"
+                    name="email"
+                    placeholder="Enter your email address"
+                    required
+                />
+                <input id="submit" type="submit" value="Get Started"></input>
+            </form>
+    
+            <section  id="features">
+                <div class="grid">
+
+                    <div class="icon">
+                            <i class="fas fa-guitar"></i>
+                    </div>
+                    <div class="desc">
+                        <h2>Premium Quality</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, aspernatur magna.</p>
+                    </div>
+                </div>
+                <div class="grid">
+
+                    <div class="icon">
+                            <i class="fas fa-guitar"></i>
+                    </div>
+                    <div class="desc">
+                        <h2>Custom design</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, aspernatur magna.</p>
+                    </div>
+                </div>
+                <div class="grid">
+
+                    <div class="icon">
+                            <i class="fas fa-guitar"></i>
+                    </div>
+                    <div class="desc">
+                        <h2>Ultimate sound</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, aspernatur magna.</p>
+                    </div>
+                </div>
+                
+            </section>
+    
+            <div id="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Q3A9Tga8oI0?start=2" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
+
+            <div id="princing">
+                <img src="guitar1.png" alt="">
+                <img src="guitar2.png" alt="">
+                <img src="guitar3.png" alt="">
+            </div>
+    
             
-
-            <nav id="nav-bar">
-                <ul>
-                    <li><a href="#" class="nav-link">Features</a></li>
-                    <li><a href="#" class="nav-link">How it Works</a></li>
-                    <li><a href="#" class="nav-link">Pricing</a></li>
-                </ul>
-            </nav>
-        </header>
-
-        <form class="border"
-            id="form"
-            method="POST"
-            action="https://www.freecodecamp.com/email-submit"
-        >
-            <label for="email"></label>
-            <input
-                id="email"
-                type="email"
-                name="email"
-                placeholder="Enter your email address"
-                required
-            />
-            <input id="submit" type="submit">get started</input>
-        </form>
-
-        <aside class="border" id="advertising">
-            <ul>
-                <li>Premium Meterial</li>
-                <li>Fast Shipping</li>
-                <li>Quality Assurance</li>
-            </ul>
-        </aside>
-
-        <div class="video">
-            <iframe class="border" width="560" height="315" src="https://www.youtube.com/embed/Q3A9Tga8oI0?start=2" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-
-        <div class="pricing">
-            <div class="box-1">Guitar 1</div>
-            <div class="box-2">Guitar 2</div>
-            <div class="box-3">Guitar 3</div>
         </div>
 
         <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>

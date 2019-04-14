@@ -15,6 +15,9 @@ body {
   font-weight: 400;
   line-height: 1.7; }
 
+.container {
+  position: relative; }
+
 .header-primary {
   position: relative;
   top: 0;
@@ -41,9 +44,59 @@ ul {
     flex-direction: row;
     justify-content: space-around;
     text-decoration: none;
-    color: inherit; }
+    color: inherit;
+    font-size: 2rem; }
     ul li .nav-link:hover {
       color: #83a729; }
+
+form {
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  form #email {
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+    padding: 1rem 3rem;
+    border: solid;
+    font-size: 2rem; }
+  form #submit {
+    padding: 1rem 3rem;
+    border-radius: 1rem;
+    background: #83a729;
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: #000000; }
+    form #submit:hover {
+      background-color: #637e1f; }
+    form #submit:active {
+      box-shadow: 0 0.5rem #666;
+      transform: translateY(0.4rem); }
+
+#features .grid {
+  display: flex;
+  justify-content: center; }
+  #features .grid .icon {
+    font-size: 5rem;
+    padding: 1rem; }
+  #features .grid .desc {
+    align-self: center; }
+    #features .grid .desc p {
+      font-size: 1.5rem; }
+
+#video {
+  display: flex;
+  justify-content: center; }
+  #video iframe {
+    max-width: 56rem;
+    max-height: auto; }
+
+#princing {
+  display: flex;
+  justify-content: center; }
+  #princing img {
+    width: auto;
+    height: 500px; }
 
 .border {
   border: 5px solid red; }

@@ -2,6 +2,11 @@ $color-background-grey: #434243;
 $color-main-green: #83a729;
 $color-white: #ffffff;
 
+@mixin center {
+    display: flex;
+    justify-content: center;
+}
+
 @mixin clearfix {
     &::after {
         content: "";
@@ -30,6 +35,10 @@ body {
     line-height: 1.7;
 }
 
+.container {
+    position: relative;
+}
+
 .header-primary {
     position: relative;
     top: 0;
@@ -46,16 +55,16 @@ body {
         display: flex;
         justify-content: center;
 
-        img{
+        img {
             width: 40rem;
             margin: 0 auto;
         }
-        
     }
 }
 
 ul {
     list-style-type: none;
+
     li {
         .nav-link {
             width: 35vw;
@@ -64,11 +73,82 @@ ul {
             justify-content: space-around;
             text-decoration: none;
             color: inherit;
+            font-size: 2rem;
 
-            &:hover{
+            &:hover {
                 color: $color-main-green;
-            } 
+            }
         }
+    }
+}
+
+form {
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    #email {
+        margin-bottom: 1rem;
+        border-radius: 1rem;
+        padding: 1rem 3rem;
+        border: solid;
+        font-size: 2rem;
+    }
+
+    #submit {
+        padding: 1rem 3rem;
+        border-radius: 1rem;
+        background: $color-main-green;
+        text-transform: uppercase;
+        font-size: 2rem;
+        color: #000000;
+
+        &:hover {
+            background-color: darken($color-main-green, 10%);
+        }
+
+        &:active {
+            box-shadow: 0 0.5rem #666;
+            transform: translateY(0.4rem);
+        }
+    }
+}
+
+#features {
+    .grid {
+        display: flex;
+        justify-content: center;
+
+        .icon {
+            font-size: 5rem;
+            padding: 1rem;
+        }
+
+        .desc {
+            align-self: center;
+
+            p {
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+
+#video {
+    @include center;
+    
+    iframe {
+        max-width: 56rem;
+        max-height: auto;
+    }
+}
+
+#princing {
+    @include center;
+    img {
+        width: auto;
+        height: 500px;
     }
 }
 
