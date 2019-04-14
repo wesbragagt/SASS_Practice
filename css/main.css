@@ -19,8 +19,9 @@ body {
   position: relative; }
 
 .header-primary {
-  position: relative;
-  top: 0;
+  position: fixed;
+  top: 0rem;
+  left: 36rem;
   min-height: 7.5rem;
   padding: 0 2rem;
   text-transform: uppercase;
@@ -29,11 +30,12 @@ body {
   align-items: center;
   background-color: transparent; }
   .header-primary .logo {
-    width: 60vw;
+    width: 40vw;
     display: flex;
     justify-content: center; }
     .header-primary .logo img {
-      width: 40rem;
+      width: 25rem;
+      height: 10rem;
       margin: 0 auto; }
 
 ul {
@@ -50,6 +52,7 @@ ul {
       color: #83a729; }
 
 form {
+  margin-top: 25rem;
   padding: 3rem;
   display: flex;
   flex-direction: column;
@@ -84,17 +87,17 @@ form {
     #features .grid .desc p {
       font-size: 1.5rem; }
 
-#video {
+.video {
   display: flex;
   justify-content: center; }
-  #video iframe {
+  .video iframe {
     max-width: 56rem;
     max-height: auto; }
 
-#princing {
+#pricing {
   display: flex;
   justify-content: center; }
-  #princing img {
+  #pricing img {
     width: auto;
     height: 500px; }
 
@@ -103,3 +106,7 @@ form {
 
 .inner-border {
   border: 5px solid blue; }
+
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 50%; } }

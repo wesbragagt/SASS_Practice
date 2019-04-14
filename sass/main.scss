@@ -40,8 +40,9 @@ body {
 }
 
 .header-primary {
-    position: relative;
-    top: 0;
+    position: fixed;
+    top: 0rem;
+    left: 36rem;
     min-height: 7.5rem;
     padding: 0 2rem;
     text-transform: uppercase;
@@ -51,12 +52,13 @@ body {
     background-color: transparent;
 
     .logo {
-        width: 60vw;
+        width: 40vw;
         display: flex;
         justify-content: center;
 
         img {
-            width: 40rem;
+            width: 25rem;
+            height: 10rem;
             margin: 0 auto;
         }
     }
@@ -83,6 +85,7 @@ ul {
 }
 
 form {
+    margin-top: 25rem;
     padding: 3rem;
     display: flex;
     flex-direction: column;
@@ -135,16 +138,16 @@ form {
     }
 }
 
-#video {
+.video {
     @include center;
-    
+
     iframe {
         max-width: 56rem;
         max-height: auto;
     }
 }
 
-#princing {
+#pricing {
     @include center;
     img {
         width: auto;
@@ -160,4 +163,11 @@ form {
 
 .inner-border {
     border: 5px solid blue;
+}
+
+// media query
+@media only screen and (max-width: 600px) {
+    html {
+        font-size: 50%;
+    }
 }
